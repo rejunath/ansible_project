@@ -1,0 +1,3 @@
+[slave]
+172.31.4.116 ansible_ssh_private_key_file=/home/ubuntu/ansible_project/sample.pem
+172.31.0.15 ansible_ssh_private_key_file=/home/ubuntu/ansible_project/sample.pem

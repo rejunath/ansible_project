@@ -1,0 +1,9 @@
+machinename:
+- { name : 'ansibleslave2' , id : 'ami-00eeedc4036573771' }
+- { name : 'ansibleslave1' , id : 'ami-00eeedc4036573771' }
+key_pair_name: sample
+sg_name: sg-0220bb22ef04e3477
+packages: maven
+source: /home/ubuntu/spring-petclinic/target/
+destination: /home/ubuntu/
+jar_file: spring-petclinic-2.7.0-SNAPSHOT.jar

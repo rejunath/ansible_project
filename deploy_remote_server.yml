@@ -1,0 +1,21 @@
+- hosts: slave
+  gather_facts: false
+  become: yes
+  vars_files:
+    - ./reference.yml
+
+  tasks:
+    - name: Installing {{packages}} in remote server
+      apt:
+        name: "{{packages}}"
+        state: present
+        update_cache: yes
+
+    - name: Copying jar file to remote server
+      copy:
+        src: "{{source}}/{{jar_file}}"
+        dest: "{{destination}}"
+
+    - name: Executing petclinic application in background
+      shell:
+        cmd: "nohup java -jar {{jar_file}} &" 
