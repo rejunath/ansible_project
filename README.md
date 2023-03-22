@@ -5,7 +5,7 @@
     
 2. For deploying in remote machine:
 
-   *ansible-playbook -i hosts deploy_remote_server.yml*
+   *ansible-playbook -i hosts app_deploy_remote_server.yml*
    
   
  **Note:**\
